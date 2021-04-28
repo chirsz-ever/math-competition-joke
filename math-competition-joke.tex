@@ -1,0 +1,73 @@
+\documentclass{exam}
+
+\usepackage[zihao=-4]{ctex}
+\usepackage{zhnumber}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{commath}
+
+\renewcommand{\thequestion}{\zhnum{question}}
+\renewcommand{\questionlabel}{\thequestion、}
+\renewcommand{\thepartno}{\arabic{numparts}} % 不重新编号 part
+\renewcommand{\partlabel}{\thepartno.}
+
+\pointname{分}
+\pointformat{\heiti（本题 \thepoints）}
+
+\extrawidth{1cm}
+
+\newcommand{\interger}{\mathbb{Z}}
+
+\begin{document}
+
+\begin{center}
+    {\large \heiti 高中联赛一试模拟题}\\
+    {\heiti（时间：80 分钟 \  满分：120）}
+\end{center}
+
+\begin{questions}
+
+\question {\heiti（共 8 小题，每题 8 分）}
+
+\begin{parts}
+    \part 不能表示为两个素数之和的大于 $2$ 的最小偶数为 \fillin。
+    \part 不能表示为 $n^2+1\ (n\in\interger^+)$ 形式的最大素数为 \fillin。
+    \part 在平面上任给 $n\ (n\ge 2)$ 个点 $A_1$，$A_2$，\dots，$A_n$，
+        其中任意两点间的距离不超过 $1$，则
+        $\max \min\limits_{1\le i < j \le n}A_i A_j={\fillin}$。
+    \part 若关于 $x$、$y$、$z$ 的方程 $\frac{4}{n}=\frac{1}{x}+
+        \frac{1}{y}+\frac{1}{z}$ 无正整数解，则正整数 $n$ 的最小值为 \fillin。
+    \part 记 $\sigma(n)=\sum_{\substack{d|n\\d\in\interger^+}}{d}$，则满足
+        $\sigma(n)=2n$ 最小的奇数为 \fillin。
+    \part 已知 $f(x)\in \interger^+[x]$，且 $f(e+\pi)=0$，则
+        $\deg f(x) = \fillin$。
+    \part 记 $p_n$ 表示从小到大第 $n$ 个素数，则所有满足 $p_{n+1}-p_{n}=2$
+        的正整数 $n$ 的和为 \fillin。
+    \part 给定正整数 $m$，若平面上任意 $n$ 个点中必有 $m$ 个点构成一个凸 $m$ 边形
+        的 $m$ 个顶点，则 $n$ 的最小值为 \fillin。
+\end{parts}
+
+\question 解答题
+
+\begin{parts}
+
+\part[16] 证明 $\int^1_0(\sum^N_{x=1}e^{2\pi i x^k\alpha})^2
+    (\sum^N_{x=1}e^{-2\pi i x^k\alpha})\dif \alpha = 0$。
+
+\part[20] 对任意正整数 $n$，定义
+\(
+    f(n) =
+    \begin{cases}
+        3n+1,         & \text{当 $n$ 为奇数} \\
+        \dfrac{n}{2}, & \text{当 $n$ 为偶数}
+    \end{cases}
+\)。对任意给定的正整数 $n$，试求最小的正整数 $k$，使得 $f^{(k)}(n)=1$。
+
+\part[20] 记 $\zeta(s)=\sum^{+\infty}_{n=1}\frac{1}{n^s}$，
+证明：$\zeta(s)$ 的零点除负实数外，全都具有实部 $\frac{1}{2}$。
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
