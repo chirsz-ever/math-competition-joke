@@ -1,6 +1,7 @@
 \documentclass{exam}
 
-\usepackage[zihao=-4]{ctex}
+\usepackage[zihao=-4, punct=kaiming]{ctex}
+\usepackage[margin=1in]{geometry}
 \usepackage{zhnumber}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -12,9 +13,12 @@
 \renewcommand{\partlabel}{\thepartno.}
 
 \pointname{分}
-\pointformat{\heiti（本题 \thepoints）}
+\pointformat{\heiti（本题\thepoints）}
 
-\extrawidth{1cm}
+\renewcommand{\partshook}{%
+    \setlength{\leftmargin}{0pt}%
+    \setlength{\itemindent}{0pt}%
+}
 
 \newcommand{\interger}{\mathbb{Z}}
 
@@ -58,8 +62,8 @@
 \(
     f(n) =
     \begin{cases}
-        3n+1,         & \text{当 $n$ 为奇数} \\
-        \dfrac{n}{2}, & \text{当 $n$ 为偶数}
+        3n+1         & \text{，当 $n$ 为奇数} \\
+        \dfrac{n}{2} & \text{，当 $n$ 为偶数}
     \end{cases}
 \)。对任意给定的正整数 $n$，试求最小的正整数 $k$，使得 $f^{(k)}(n)=1$。
 
