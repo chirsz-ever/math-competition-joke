@@ -1,11 +1,12 @@
 \documentclass{exam}
 
-\usepackage[zihao=-4, punct=kaiming]{ctex}
+\usepackage[zihao=-4, punct=kaiming, scheme=plain]{ctex}
 \usepackage[margin=1in]{geometry}
 \usepackage{zhnumber}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{commath}
+\usepackage[onehalfspacing, nodisplayskipstretch]{setspace}
 
 \renewcommand{\thequestion}{\zhnum{question}}
 \renewcommand{\questionlabel}{\thequestion、}
@@ -61,9 +62,10 @@
 \part[20] 对任意正整数 $n$，定义
 \(
     f(n) =
+    \linespread{1}\selectfont
     \begin{cases}
         3n+1         & \text{，当 $n$ 为奇数} \\
-        \dfrac{n}{2} & \text{，当 $n$ 为偶数}
+        \frac{n}{2} & \text{，当 $n$ 为偶数}
     \end{cases}
 \)。对任意给定的正整数 $n$，试求最小的正整数 $k$，使得 $f^{(k)}(n)=1$。
 
